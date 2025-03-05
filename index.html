@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css"
@@ -14,9 +15,12 @@
     <title>Web cloning</title>
   </head>
   <body>
-    <header class="bg-[url(/source/headerbg.jpg)]..." ></header>
+    <header
+      class="bg-cover bg-center h-screen"
+      style="background-image: url(/source/headerbg.jpg)"
+    >
       <nav>
-        <div class="flex items-center">
+        <div class="flex">
           <div>
             <div>
               <img
@@ -27,7 +31,7 @@
             </div>
           </div>
           <div>
-            <ul class="flex items-center gap-3">
+            <ul class="flex">
               <li>Home</li>
               <li>Offer</li>
               <li>Gallery</li>
@@ -36,58 +40,110 @@
               <li>Contact</li>
             </ul>
           </div>
-          <div class="flex-right">
-            <button class="gap-5">Sign Up</button>
+          <div>
+            <button>Sign Up</button>
           </div>
         </div>
       </nav>
-      <div class="text-center">
-        <h4>Adventures</h4>
-        <p>Let yourself be impressed</p>
-        <button class="bg-white font-bold">SIGN UP</button>
+      <div
+        class="flex flex-col items-center justify-center h-screen text-center"
+      >
+        <h4 class="text-2xl text-white italic">Adventures</h4>
+        <p class="text-4xl font-bold mb-4 text-white">
+          Let yourself be impressed
+        </p>
+        <button class="px-6 py-3 bg-white rounded-lg">SIGN UP</button>
       </div>
     </header>
     <main>
-        <div>
-            <h1>POWER OF IMPRESSIONS GUARANTEED
-FEEL EXTREMELY</h1>
-            <p>Curabitur sit amet purus semper tortor tempor lacinia eu in tortor. Integer nisl risus, condimentum sed lacinia in, tincidunt eget mi. Praesent finibus mollis blandit. Suspendisse vulputate turpis et erat iaculis viverra.</p>
-        <h3>Curabitur sit amet purus semper Tortor Tempor</h3>
-        </div>
-        <section class="flex">
-            <div>
-                <div><img src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_256/rwdMode_1/500x333/alpinism.webp" alt=""></div>
-            </div>
-        <div>
-            <h1>ROCK CLIMBING</h1>
-            <p>Curabitur sit amet purus semper tortor tempor lacinia eu in tortor. Integer nisl risus, condimentum sed lacinia in.</p>
-            <button>SIGN UP</button>
-        </div>
-        <div>
-            <h1>EXTREME OFFROAD</h1>
-            <p>Curabitur sit amet purus semper tortor tempor lacinia eu in tortor. Integer nisl risus, condimentum sed lacinia in.</p>
-            <button>SIGN UP</button>
-        </div>
-        <div>
-            <div><img src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_263/rwdMode_1/500x333/offroad.webp" alt=""></div>
-        </div>
-        
-    </section>
-   <section>
-    <div class="flex">
-    <div>
-        <div><img src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_265/rwdMode_1/491x734/Gallery_1.webp" alt=""></div>
-    </div>
-    <div>
-        <div><img src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_266/rwdMode_1/689x379/Gallery_2.webp" alt=""></div>
-    </div>
+      <div class="flex flex-col items-center justify-center text-center px-5">
+        <h1 class="text-4xl m-4 h-20">
+          POWER OF IMPRESSIONS GUARANTEED <br />FEEL EXTREMELY
+        </h1>
 
-    <div>
-        <div><img src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_267/rwdMode_1/334x334/Gallery_3.webp" alt=""></div>
-    </div>
-    <div><div><img src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_268/rwdMode_1/333x333/Gallery_4.webp" alt=""></div></div>
-    </div>
-   </section>
+        <p class="text-lg mb-4 px-4">
+          Curabitur sit amet purus semper tortor tempor lacinia eu in tortor.
+          Integer nisl risus, condimentum sed lacinia in, tincidunt eget mi.
+          Praesent finibus mollis blandit. Suspendisse vulputate turpis et erat
+          iaculis viverra.
+        </p>
+        <h3>Curabitur sit amet purus semper Tortor Tempor</h3>
+      </div>
+      <section>
+        <div class="flex">
+          <div>
+            <div>
+              <img
+                src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_256/rwdMode_1/500x333/alpinism.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div>
+            <h1>ROCK CLIMBING</h1>
+            <p>
+              Curabitur sit amet purus semper tortor tempor lacinia eu in
+              tortor. Integer nisl risus, condimentum sed lacinia in.
+            </p>
+            <button>SIGN UP</button>
+          </div>
+        </div>
+        <div class="flex">
+          <div>
+            <h1>EXTREME OFFROAD</h1>
+            <p>
+              Curabitur sit amet purus semper tortor tempor lacinia eu in
+              tortor. Integer nisl risus, condimentum sed lacinia in.
+            </p>
+            <button>SIGN UP</button>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_263/rwdMode_1/500x333/offroad.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div>
+            <div>
+              <img
+                src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_265/rwdMode_1/491x734/Gallery_1.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_266/rwdMode_1/689x379/Gallery_2.webp"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <img
+                src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_267/rwdMode_1/334x334/Gallery_3.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_268/rwdMode_1/333x333/Gallery_4.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
